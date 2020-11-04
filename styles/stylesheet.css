@@ -1,4 +1,113 @@
 body {
   font-family: sans-serif;
-  padding: 50px 100px;
+  line-height: 1.5; /* spacing between lines */
+}
+body a {
+  text-decoration: none; /* removes hyperlink underlines */
+}
+.page-header {
+  background: #009999 url(../images/banner-image.jpg) center no-repeat; /* shorthand for: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit  */
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+.page-header h1 {
+  padding: 70px 100px 0px; /* 100px margin on left and right for rest of page to follow */
+}
+.page-header p {
+  padding: 0 100px;
+  width: 14em;
+  font-style: italic; /* italicizes font */
+  font-size: 20px; /* changes font size */
+}
+.menu ul {
+  list-style-type: none; /* removes bullet points */
+  margin: 0; /* removes browser defaults */
+  padding: 0 100px;
+  overflow: hidden;
+  background-color: lightgrey;
+  font-weight: bold; /* makes text bold */
+  width: auto;
+}
+.menu li {
+  float: left; /* alignment of nav li */
+  padding: 12px 16px 12px 0;
+}
+.menu li a {
+  color: black;
+}
+.menu li a:hover { /* changes link color on hover */
+  color: #009999;
+}
+article {
+  padding: 30px 100px;
+  box-sizing: border-box;
+  float: left;
+  width: 65%;
+}
+.h2 {
+  color: #009999;
+}
+.quote {
+  padding: 30px 0;
+  color: #00b3b3;
+}
+.side {
+  width: 30%;
+  height: auto;
+  padding-left: 15px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  float: right;
+}
+#week {
+  height: auto;
+  padding-left: 15px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 42em;
+  right: 100px;
+  float: right;
+}
+footer {
+  /* footer background image */
+  background: #009999 url(../images/footer-image.jpg) center no-repeat; /* shorthand for: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit  */
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 250px;
+  /* positioning */
+  position: relative;
+  bottom: 0;
+  float: left;
+  text-align: center;
+  margin-top: 2em;
+}
+footer img {
+  margin-top: 1.5em;
+}
+footer p {
+  width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer ul {
+  list-style-type: none; /* removes bullet points */
+}
+footer li {
+  display: inline;
+  padding: 12px 16px 12px 0;
+}
+footer li a:hover { /* changes link color on hover */
+  color: #009999;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
