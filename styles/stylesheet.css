@@ -5,6 +5,13 @@ body {
 body a {
   text-decoration: none; /* removes hyperlink underlines */
 }
+body a:link {
+  color: #00b3b3;
+}
+body a:hover {
+  color: #009999;
+  text-decoration: underline;
+}
 .page-header {
   background: #009999 url(../images/banner-image.jpg) center no-repeat; /* shorthand for: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit  */
   height: 250px;
@@ -37,7 +44,7 @@ body a {
 .menu li a {
   color: black;
 }
-.menu li a:hover { /* changes link color on hover */
+.menu li a:hover {
   color: #009999;
 }
 article {
@@ -50,8 +57,12 @@ article {
   color: #009999;
 }
 .quote {
-  padding: 30px 0;
-  color: #00b3b3;
+  margin: 30px 0;
+  padding: 15px;
+  color: teal;
+  border: 2px solid teal; /* shorthand of width, style, and color properties */
+  border-radius: 5px;
+  background-color: lightblue;
 }
 .side {
   width: 30%;
@@ -63,6 +74,9 @@ article {
   top: 350px;
   right: 100px;
   float: right;
+}
+.side img {
+  text-align: center;
 }
 #week {
   height: auto;
@@ -103,7 +117,7 @@ footer li {
   display: inline;
   padding: 12px 16px 12px 0;
 }
-footer li a:hover { /* changes link color on hover */
+footer li a:hover {
   color: #009999;
 }
 .clearfix::after {
